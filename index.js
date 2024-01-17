@@ -9,6 +9,8 @@ const path = import("path");
 // const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const bodyParserErrorHandler = require('express-body-parser-error-handler')
+const dotenv = require("dotenv");
+dotenv.config({ path: './secrets.env' });
 
 // Variables
 const token = process.env['trellotoken'];
@@ -121,4 +123,4 @@ updateAll();
 setInterval(updateAll, 10000); // every 30s
 
 // Port
-app.listen(process.env.PORT);
+app.listen(80);
