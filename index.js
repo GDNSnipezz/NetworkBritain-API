@@ -121,4 +121,4 @@ updateAll();
 setInterval(updateAll, 10000); // every 30s
 
 // Port
-app.listen(process.env.PORT);
+app.listen(80);
