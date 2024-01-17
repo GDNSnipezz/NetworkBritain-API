@@ -9,6 +9,8 @@ const path = import("path");
 // const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const bodyParserErrorHandler = require('express-body-parser-error-handler')
+const dotenv = require("dotenv");
+dotenv.config({ path: './secrets.env' });
 
 // Variables
 const token = process.env['trellotoken'];
